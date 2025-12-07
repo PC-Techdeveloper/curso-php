@@ -3,8 +3,8 @@
 
 /* Métodos mágicos: __construct(), __destruct(), __call(), __callStatic(), __get(), __set(), __isset(), __unset(), __sleep(), __wakeup(), __serialize(), __unserialize(), __toString(), __invoke(), __set_state() __clone(), y __debugInfo(). */
 
-#ejemplo de interface
 interface Template
+#ejemplo de interface
 {
   public function set_variable($name, $var);
   public function get_html($template);
