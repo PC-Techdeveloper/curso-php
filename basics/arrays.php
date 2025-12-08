@@ -102,3 +102,19 @@ echo $a;
 echo $b;
 print_r($a);
 print_r($b);
+
+#arrays asociativos
+
+$names = ["John", "Jane", "Jack"];
+
+$beer = array(
+  "name" => "Miller Lite",
+  "alcohol" => 4.5,
+  "country" => "USA",
+);
+
+foreach ($names as $name) {
+  echo "Hi, welcome to $name's bar!";
+};
+
+echo $beer['country'];
