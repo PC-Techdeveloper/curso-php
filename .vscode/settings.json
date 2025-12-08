@@ -49,11 +49,8 @@
   "prettier.singleQuote": true,
   "prettier.enable": true,
   "prettier.bracketSpacing": true,
-  "oneDarkPro.bold": true,
   "editor.quickSuggestions": {
-    "other": "on",
-    "comments": false,
-    "strings": false
+    "strings": true
   },
   "editor.suggestOnTriggerCharacters": true,
   "editor.acceptSuggestionOnEnter": "on",
@@ -67,7 +64,7 @@
   "workbench.startupEditor": "none",
   "editor.quickSuggestionsDelay": 0,
   "files.exclude": {
-    "**/node_modules": true,
+    "**/node_modules": false,
     "**/dist": true,
     "**/build": true,
     "**/.git": true
@@ -125,7 +122,6 @@
     }
   },
   "eslint.enable": true,
-  "workbench.colorCustomizations": {},
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
   "explorer.fileNesting.enabled": true,
@@ -134,11 +130,14 @@
   "typescript.tsserver.experimental.enableProjectDiagnostics": false,
   "typescript.suggest.autoImports": false,
   "javascript.suggest.autoImports": false,
-  "editor.suggest.showSnippets": false,
+  "editor.suggest.showSnippets": true,
   "editor.suggest.showMethods": true,
   "editor.suggest.showFunctions": true,
   "editor.suggest.showVariables": true,
   "rapidapi.terminalLink.enabled": false,
   "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "workbench.layoutControl.enabled": false,
+  "editor.experimental.stickyScroll.enable": true,
+  "oneDarkPro.vivid": true
 }
