@@ -45,7 +45,7 @@
   "window.zoomLevel": 1.8,
   "files.autoSave": "afterDelay",
   "prettier.arrowParens": "avoid",
-  "prettier.semi": false,
+  "prettier.semi": true,
   "prettier.singleQuote": true,
   "prettier.enable": true,
   "prettier.bracketSpacing": true,
@@ -135,10 +135,10 @@
   "editor.suggest.showFunctions": true,
   "editor.suggest.showVariables": true,
   "rapidapi.terminalLink.enabled": false,
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "workbench.sideBar.location": "right",
+  "workbench.sideBar.location": "left",
   "workbench.layoutControl.enabled": false,
   "editor.experimental.stickyScroll.enable": true,
-  "oneDarkPro.vivid": true,
-  "workbench.colorCustomizations": {}
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "One Dark Pro Mix",
+  "editor.lineHeight": 15
 }
