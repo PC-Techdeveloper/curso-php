@@ -5,6 +5,13 @@ function square($number)
   return $number * $number;
 }
 
+function sum($num1, $num2)
+{
+  return $num1 + $num2;
+}
+
+echo sum(4, 4);
+
 echo square(4);
 
 #devolviendo un array de una función

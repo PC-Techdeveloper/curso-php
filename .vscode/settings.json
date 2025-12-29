@@ -1,145 +1,176 @@
+// Requirements:
+// 1. Must install APC extension (drcika.apc-extension)
+// 2. Change the font family or install JetBrainsMono Nerd Font (https://www.nerdfonts.com/font-downloads)
+// 3. Change the color theme or install Catppuccin Mocha (Catppuccin.catppuccin-vsc)
+//   3.1. If you changed the color theme, also change the color of the window controls to match the theme (Line 101 of this gist)
+// 4. Change the icon theme or install Symbols (miguelsolorio.symbols)
+// 5. Change/add your specific settings whatever you like
+// ⚠ Made for Windows so idk how its gonna look on Mac
 {
-  // editor
-  "editor.fontSize": 12.6,
-  "editor.fontFamily": "Cascadia Code",
-  "editor.fontLigatures": true,
-  "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
-  // cursor
+  // General
+  "json.schemaDownload.enable": true,
+  "breadcrumbs.enabled": false,
+  "update.mode": "manual",
+  "update.showReleaseNotes": false,
+  "window.titleBarStyle": "native",
+  "window.customTitleBarVisibility": "never",
+  "window.commandCenter": false,
+  "window.menuBarVisibility": "classic",
+  "window.restoreWindows": "all",
+  "files.associations": {
+    ".env.*": "dotenv"
+  },
+
+  // Workbench
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.list.smoothScrolling": true,
+  "workbench.iconTheme": "symbols",
+  "workbench.colorTheme": "One Dark Pro Darker",
+  "workbench.editor.labelFormat": "short",
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.editor.editorActionsLocation": "default",
+  "workbench.activityBar.location": "default",
+  "workbench.statusBar.visible": false,
+  "workbench.layoutControl.enabled": false,
+  "workbench.sideBar.location": "right",
+  "git.enabled": true,
+
+  // Editor
+  "editor.fontSize": 14,
+  "editor.tabSize": 2,
+  "editor.suggestSelection": "recentlyUsed",
   "editor.cursorSmoothCaretAnimation": "on",
-  "editor.cursorBlinking": "expand",
-  // config related to code formatting
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[astro]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  "editor.smoothScrolling": true,
+  "editor.parameterHints.enabled": true,
+  "editor.suggest.preview": false,
+
+  "editor.fontFamily": "Cascadia Code PL",
+  "window.zoomLevel": 1,
+  "editor.fontLigatures": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.accessibilitySupport": "off",
+  "editor.semanticHighlighting.enabled": true,
+  "editor.inlineSuggest.enabled": true,
+  "editor.hideCursorInOverviewRuler": false,
+  "editor.minimap.enabled": false,
+  "editor.scrollbar.vertical": "auto",
+  "editor.renderLineHighlight": "all",
+  "editor.quickSuggestions": {
+    "strings": "on"
   },
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
+    "source.fixAll.eslint": "explicit"
   },
-  "eslint.alwaysShowStatus": true,
-  //terminal
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
-  "terminal.integrated.cursorStyle": "line",
-  "terminal.integrated.cursorBlinking": true,
-  "workbench.iconTheme": "symbols",
-  "window.zoomLevel": 1.55,
-  "files.autoSave": "afterDelay",
-  "prettier.arrowParens": "always",
-  "prettier.printWidth": 90,
-  "prettier.semi": true,
-  "prettier.singleQuote": true,
-  "prettier.enable": true,
-  "prettier.bracketSpacing": true,
-  "editor.quickSuggestions": {
-    "strings": true
-  },
-  "editor.suggestOnTriggerCharacters": true,
-  "editor.acceptSuggestionOnEnter": "on",
-  "editor.suggest.snippetsPreventQuickSuggestions": false,
-  "editor.inlineSuggest.enabled": true,
-  "editor.tabSize": 2,
-  "workbench.activityBar.location": "default",
-  "security.workspace.trust.untrustedFiles": "open",
-  "liveServer.settings.donotShowInfoMsg": true,
-  "workbench.startupEditor": "none",
-  "editor.quickSuggestionsDelay": 0,
-  "files.exclude": {
-    "**/node_modules": false,
-    "**/dist": true,
-    "**/build": true,
-    "**/.git": true
-  },
-  "search.exclude": {
-    "**/node_modules": true,
-    "**/dist": true,
-    "**/build": true
-  },
-  "tailwindCSS.experimental.classRegex": [["class=\\\"([^\\\"]*)\\\"", "[^\\s]+"]],
 
-  "javascript.preferences.importModuleSpecifierEnding": "auto",
-  "editor.suggest.showWords": false,
-  "security.workspace.trust.enabled": false,
-  "files.watcherExclude": {
-    "**/node_modules/**": true,
-    "**/dist/**": true,
-    "**/build/**": true,
-    "**/.git/**": true
-  },
-  "typescript.tsserver.watchOptions": {
-    "watchFile": "fixedPollingInterval",
-    "watchDirectory": "dynamicPriorityPolling"
-  },
-  "javascript.suggest.enabled": true,
-  "typescript.disableAutomaticTypeAcquisition": true,
-  "files.useExperimentalFileWatcher": true,
-  "search.followSymlinks": false,
-  "supermaven.allowGitignore": true,
-  "supermaven.enable": {
-    "*": true
-  },
-  "supermaven.maxFileSizeKb": 200,
-  "supermaven.exclude": ["**/dist/**", "**/node_modules/**"],
-  "editor.parameterHints.enabled": false,
-  "workbench.statusBar.visible": true,
-  "github.copilot.enable": {
-    "*": false,
-    "plaintext": false,
-    "markdown": false,
-    "scminput": false
-  },
-  "[php]": {
-    "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
-  },
-  "git.ignoreLimitWarning": true,
-  "editor.stickyScroll.enabled": true,
-  "editor.smoothScrolling": true,
-  "terminal.integrated.shellIntegration.enabled": false,
-  "eslint.options": {
-    "rules": {
-      "space-before-function-paren": "off"
-    }
-  },
-  "eslint.enable": true,
+  // Explorer
+  "explorer.compactFolders": false,
   "explorer.confirmDelete": false,
   "explorer.confirmDragAndDrop": false,
+  "explorer.sortOrder": "foldersNestsFiles",
   "explorer.fileNesting.enabled": true,
-  "typescript.tsserver.useSeparateSyntaxServer": true,
-  "typescript.tsserver.maxTsServerMemory": 4096,
-  "typescript.tsserver.experimental.enableProjectDiagnostics": false,
-  "typescript.suggest.autoImports": false,
-  "javascript.suggest.autoImports": false,
-  "editor.suggest.showSnippets": true,
-  "editor.suggest.showMethods": true,
-  "editor.suggest.showFunctions": true,
-  "editor.suggest.showVariables": true,
-  "rapidapi.terminalLink.enabled": false,
-  "workbench.sideBar.location": "right",
-  "workbench.layoutControl.enabled": false,
-  "editor.experimental.stickyScroll.enable": true,
-  "workbench.colorCustomizations": {},
-  "workbench.colorTheme": "One Dark Pro Darker",
-  "editor.renderLineHighlight": "none",
-  "breadcrumbs.enabled": false,
-  "workbench.tree.indent": 4,
-  "breadcrumbs.filePath": "on",
-  "breadcrumbs.symbolPath": "off",
-  "editor.folding": true,
-  "editor.glyphMargin": true,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "editor.unicodeHighlight.invisibleCharacters": false,
-  "workbench.editorLargeFileConfirmation": 10024,
-  "workbench.editor.empty.hint": "hidden",
-  "workbench.editor.showTabs": "multiple",
-  "window.menuBarVisibility": "compact",
-  "glassit.alpha": 210
+  "explorer.fileNesting.patterns": {
+    "package.json": ".eslint*, .prettier*, tsconfig*, vite*, pnpm-lock*, bun.lockb, nest*, .yarn*, yarn.lock",
+    "tailwind.config.js": "tailwind.config*, postcss.config*",
+    "next.config.js": "next*",
+    ".env.local": ".env*",
+    ".env": ".env*"
+  },
+
+  // Terminal
+  "terminal.integrated.fontSize": 15,
+  "terminal.integrated.fontFamily": "CaskaydiaCove Nerd Font",
+  "terminal.external.windowsExec": "wt",
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.cursorStyle": "line",
+
+  // Security
+  "security.workspace.trust.banner": "never",
+  "security.workspace.trust.startupPrompt": "never",
+  "security.workspace.trust.untrustedFiles": "open",
+  "security.workspace.trust.enabled": false,
+
+  // Extensions settings
+  "apc.activityBar": {
+    "position": "bottom",
+    "hideSettings": true,
+    "size": 48,
+    "itemMargin": 8,
+    "itemSize": 32
+  },
+  "apc.electron": {
+    "titleBarStyle": "hidden",
+    "titleBarOverlay": {
+      "color": "rgba(0,0,0,0)",
+      // Color of the window controls matching my theme
+      "symbolColor": "#cba6f7",
+      "height": 42,
+      "opacity": 0
+    },
+    "frame": false
+  },
+  "apc.header": {
+    "height": 36
+  },
+  "apc.listRow": {
+    "height": 24
+  },
+  "apc.stylesheet": {
+    // Draggable area
+    "body::after": "content:'';position:absolute;top:0;left:0;width:100%;height:10px;z-index:9999;-webkit-app-region: drag;",
+    ".sidebar>.title>.title-label": "opacity: 0;flex: 0!important;padding: 0!important;",
+    ".sidebar>.title": "padding: 0px 8px!important",
+    ".nosidebar .inline-tabs-placeholder": "width: 75px",
+    ".tabs-and-actions-container": "max-width: calc(100% - 115px);",
+    ".pane-header": "padding: 0 8px",
+    ".pane-body": "padding: 0px",
+    ".split-view-view:first-child .pane-header": "display: none !important;",
+    ".monaco-list-row": "border-radius: 0px;",
+    ".monaco-workbench .monaco-list:not(.element-focused):focus:before": "display: none;",
+    ".window-appicon": "display: none;"
+  },
+  "symbols.hidesExplorerArrows": false,
+  "autoimport.showNotifications": false,
+  "prettier.trailingComma": "all",
+  "prettier.arrowParens": "always",
+  "prettier.enable": true,
+  "prettier.singleQuote": true,
+  "editor.formatOnSave": true,
+  "files.autoSave": "afterDelay",
+  "workbench.editor.enablePreview": false,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false
+  },
+  "git.suggestSmartCommit": false,
+
+  // Language specific settings
+  "javascript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "workbench.colorCustomizations": {}
 }

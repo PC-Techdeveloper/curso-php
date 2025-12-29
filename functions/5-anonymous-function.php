@@ -14,7 +14,7 @@ $message = 'hola';
 // };
 // $example();
 
-#una declaración de tipo de retorno para la función debe ser colocada después de 
+#una declaración de tipo de retorno para la función debe ser colocada después de
 #la clausula use.
 // Hereda $message
 $example = function () use ($message) {

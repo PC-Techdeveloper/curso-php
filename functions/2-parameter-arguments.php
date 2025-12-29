@@ -30,7 +30,7 @@ echo servir_cafe();
 echo servir_cafe(null); #no define el valor por defecto
 echo servir_cafe("expresso");
 
-#uso de objetos como valores por defecto 
+#uso de objetos como valores por defecto
 class DefaultCoffeMaker
 {
   public function brew(): string

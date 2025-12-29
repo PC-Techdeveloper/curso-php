@@ -1,6 +1,6 @@
 <?php
 
-/* 
+/*
 fopen: to open a file for reading.
 fgets: function lets you read a file line by line.
 fread: reads a specified number of byte.
